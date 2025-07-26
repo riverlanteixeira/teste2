@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de RA - Animação</title>
+    <title>Teste de RA - Distância Inicial</title>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; }
@@ -12,15 +12,17 @@
 </head>
 <body>
     <model-viewer
-                  src="stranger_things_demogorgon_animated.glb"
-                  alt="Um modelo 3D animado"
+                  src="stranger_things_demogorgon_animated.glb" alt="Um modelo 3D"
                   ar
                   ar-modes="webxr scene-viewer quick-look"
+                  
+                  camera-orbit="0deg 75deg 5m"
+                  
+                  auto-rotate
                   camera-controls
                   shadow-intensity="1"
-                  
-                  autoplay
-                  animation-name="*"
+                  ar-stability="enabled"
+                  ar-placement="floor"
                   >
     </model-viewer>
 </body>
